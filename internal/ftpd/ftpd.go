@@ -283,6 +283,9 @@ type Configuration struct {
 	// FTP servers do. Some legacy clients rely on this order. The whole directory has to be read before
 	// sending the listing, which is what already happens for FTP listings
 	SortListings bool `json:"sort_listings" mapstructure:"sort_listings"`
+	// Set to true to accept the legacy "MDTM YYYYMMDDHHMMSS path" form, used by some clients to set
+	// the modification time of a file (vsftpd mdtm_write)
+	MDTMWrite bool `json:"mdtm_write" mapstructure:"mdtm_write"`
 	// Set to true to enable the FTP SITE command.
 	// We support chmod and symlink if SITE support is enabled
 	EnableSite bool `json:"enable_site" mapstructure:"enable_site"`

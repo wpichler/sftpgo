@@ -145,6 +145,7 @@
     },
     "disable_active_mode": false,
     "sort_listings": false,
+    "mdtm_write": false,
     "enable_site": false,
     "hash_support": 0,
     "combine_support": 0,

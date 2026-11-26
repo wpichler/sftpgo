@@ -298,6 +298,7 @@ func Init() {
 			},
 			DisableActiveMode:  false,
 			SortListings:       false,
+			MDTMWrite:          false,
 			EnableSite:         false,
 			HASHSupport:        0,
 			CombineSupport:     0,
@@ -2121,6 +2122,7 @@ func setViperDefaults() {
 	viper.SetDefault("ftpd.passive_port_range.end", globalConf.FTPD.PassivePortRange.End)
 	viper.SetDefault("ftpd.disable_active_mode", globalConf.FTPD.DisableActiveMode)
 	viper.SetDefault("ftpd.sort_listings", globalConf.FTPD.SortListings)
+	viper.SetDefault("ftpd.mdtm_write", globalConf.FTPD.MDTMWrite)
 	viper.SetDefault("ftpd.enable_site", globalConf.FTPD.EnableSite)
 	viper.SetDefault("ftpd.hash_support", globalConf.FTPD.HASHSupport)
 	viper.SetDefault("ftpd.combine_support", globalConf.FTPD.CombineSupport)

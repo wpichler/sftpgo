@@ -125,6 +125,7 @@ func (s *Server) GetSettings() (*ftpserver.Settings, error) {
 		TLSRequired:             ftpserver.TLSRequirement(s.binding.TLSMode),
 		DisableSite:             !s.config.EnableSite,
 		DisableActiveMode:       s.config.DisableActiveMode,
+		EnableMDTMWrite:         s.config.MDTMWrite,
 		EnableHASH:              s.config.HASHSupport > 0,
 		EnableCOMB:              s.config.CombineSupport > 0,
 		DefaultTransferType:     ftpserver.TransferTypeBinary,
